@@ -48,3 +48,8 @@ Docs: https://docs.expo.dev/eas/index.md
 - **`hooks/` folder.** Wrap every operation in a custom hook in the `hooks/` folder (e.g. `src/hooks/`). Each hook must use TanStack Query (`useQuery` / `useMutation`) and call the corresponding SQLite function from `services/`. Components only consume these hooks.
 
 Flow: component -> custom hook (`hooks/`, TanStack Query) -> service (`services/`, expo-sqlite).
+
+## Notifications
+
+- Every time you finish something, run `notify-send "i have done <what you've done>"`.
+- When you are ready for the next task, run `notify-send "I AM READY FOR THE NEXT TASK"`.

@@ -207,6 +207,7 @@ function Session({ initial, onRestart }: { initial: StudyCard[]; onRestart: () =
       </View>
       <View style={styles.cardWrap}>
         <Flashcard
+          key={`${current.id}-${done}`}
           eyebrow={cardEyebrow}
           front={current.front}
           frontIsArabic={!isCustom}
